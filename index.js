@@ -6,8 +6,8 @@ const axios = require('axios');
 const app = express();
 const PORT = 3005;
 const limiter = rateLimit({
-    windowMs:2 * 60 * 1000,
-    max: 5
+    windowMs: 1 * 60 * 1000,
+    max: 1000
 })
 app.set('trust proxy', 1);
 app.use(morgan('combined'));
